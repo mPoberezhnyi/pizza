@@ -1,0 +1,97 @@
+.products-wrapper {
+    flex: 4;
+    @media screen and (max-width: $medium) {
+        flex: 3
+    }
+    @media screen and (max-width: $small) {
+        flex: 2
+    }
+    @media screen and (max-width: $extra-small) {
+        flex: 1
+    }
+}
+.products {
+    // width: 75%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    padding: 0 0 0 26px;
+    &-item {
+        padding: 0 24px 48px 0;
+        display: flex;
+    }
+
+    display: grid;
+    &.row {
+        @media screen and (min-width: $medium) {
+
+            grid-template-columns: 1fr;
+            .products-item {
+                padding: 0 24px 24px 0;
+            }
+            .product {
+                @include flex(row, flex-start, center);
+                padding: 32px 50px;
+                &-image {
+                    margin-bottom: 0;
+                    margin-right: 74px;
+                    img {
+                        max-width: 176px;
+                    }
+                }
+                &-content {
+                    @include flex(column, space-between, flex-start);
+                }
+                &-category {
+
+                }
+                h3 {
+                    text-align: left;
+                }
+                &-desc {
+                    text-align: left;
+                    margin-bottom: 42px;
+                }
+                &-price {
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 800;
+                    line-height: 1.42;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: $orange;
+                }
+                &-bottom {
+                    @include flex(row, space-between, center);
+                    width: 100%;
+                }
+                &-order {
+                    position: static;
+                    left: 0;
+                    bottom: 0;
+                    transform: translate3d(0, 0, 0);
+                    display: flex;
+                    transition: all 0 linear;
+                    opacity: 1;
+                }
+                &:hover {
+                    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+                    .product-order {
+                        display: flex;
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+    &.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        @media screen and (max-width: $large) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: $medium) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

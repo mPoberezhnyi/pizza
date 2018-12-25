@@ -1,0 +1,145 @@
+[{
+        "id": "1",
+        "name": "Supreme",
+        "description": "Pepperoni, seasoned pork, beef, mushrooms, green bell peppers and red onions.",
+        "image": "bitmap_5",
+        "price": {
+            "currency": "$",
+            "value": "12.50"
+        },
+        "category": ["meat"],
+        "ordered": "23",
+        "size": {
+            "title": "Medium",
+            "value": "600mm"
+        }
+    },
+    {
+        "id": 2,
+        "name": "HAWAIIAN CHICKEN",
+        "description": "Grilled chicken, ham, pineapple and green bell peppers.",
+        "image": "bitmap_6",
+        "price": {
+            "currency": "$",
+            "value": "5.50"
+        },
+        "category": ["veggie", "hot"],
+        "ordered": "5",
+        "size": {
+            "title": "Large",
+            "value": "400mm"
+        }
+    },
+    {
+        "id": 3,
+        "name": "VEGGIE LOVER’S",
+        "description": "Mushrooms, red onions, green bell peppers, diced Roma tomatoes and black olives.",
+        "image": "bitmap_7",
+        "price": {
+            "currency": "$",
+            "value": "15.80"
+        },
+        "category": ["meat"],
+        "ordered": "31",
+        "size": {
+            "title": "Medium",
+            "value": "600mm"
+        }
+    },
+    {
+        "id": 4,
+        "name": "MEAT LOVER’S",
+        "description": "Pepperoni, Italian sausage, ham, bacon, seasoned pork and beef.",
+        "image": "bitmap_8",
+        "price": {
+            "currency": "$",
+            "value": "14.00"
+        },
+        "category": ["veggie"],
+        "ordered": "87",
+        "size": {
+            "title": "Small",
+            "value": "400mm"
+        }
+    },
+    {
+        "id": 5,
+        "name": "BUFFALO CHICKEN",
+        "description": "Grilled chicken, banana peppers and red onions. With Buffalo sauce.",
+        "image": "bitmap_9",
+        "price": {
+            "currency": "$",
+            "value": "8.20"
+        },
+        "category": ["hot"],
+        "ordered": "54",
+        "size": {
+            "title": "Large",
+            "value": "400mm"
+        }
+    },
+    {
+        "id": 6,
+        "name": "SUPREME",
+        "description": "Pepperoni, seasoned pork, beef, mushrooms, green bell peppers and red onions.",
+        "image": "bitmap_5",
+        "price": {
+            "currency": "$",
+            "value": "4.20"
+        },
+        "category": ["hot"],
+        "ordered": "3",
+        "size": {
+            "title": "Small",
+            "value": "400mm"
+        }
+    },
+    {
+        "id": 7,
+        "name": "MEAT LOVER’S",
+        "description": "Pepperoni, Italian sausage, ham, bacon, seasoned pork and beef.",
+        "image": "bitmap_8",
+        "price": {
+            "currency": "$",
+            "value": "8.20"
+        },
+        "category": ["hot"],
+        "ordered": "12",
+        "size": {
+            "title": "Small",
+            "value": "400mm"
+        }
+    },
+    {
+        "id": 8,
+        "name": "BUFFALO CHICKEN",
+        "description": "Pepperoni, seasoned pork, beef, mushrooms, green bell peppers and red onions.",
+        "image": "bitmap_9",
+        "price": {
+            "currency": "$",
+            "value": "9.20"
+        },
+        "category": ["hot"],
+        "ordered": "24",
+        "size": {
+            "title": "Large",
+            "value": "800mm"
+        }
+    },
+    {
+        "id": 9,
+        "name": "VEGGIE LOVER’S",
+        "description": "Pepperoni, seasoned pork, beef, mushrooms, green bell peppers and red onions.",
+        "image": "bitmap_7",
+        "price": {
+            "currency": "$",
+            "value": "3.20"
+        },
+        "category": ["hot"],
+        "ordered": "65",
+        "size": {
+            "title": "Large",
+            "value": "400mm"
+        }
+    }
+]

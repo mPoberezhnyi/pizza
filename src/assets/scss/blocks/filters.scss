@@ -1,0 +1,18 @@
+.filters  {
+    padding: 120px 24px 48px 48px;
+    // width: 25%;
+    flex: 1;
+    h2 {
+        margin-bottom: 24px;
+    } 
+    .filter {
+        margin-bottom: 32px; 
+        &-row {
+            @include flex(row, space-between, center);
+            margin-top: 16px;
+            .input {
+                width: calc(50% - 12px);
+            }
+        }
+    }
+}

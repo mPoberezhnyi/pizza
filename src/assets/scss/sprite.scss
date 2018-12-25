@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$cart-name: 'cart';
+$cart-x: 0px;
+$cart-y: 0px;
+$cart-offset-x: 0px;
+$cart-offset-y: 0px;
+$cart-width: 24px;
+$cart-height: 24px;
+$cart-total-width: 88px;
+$cart-total-height: 72px;
+$cart-image: 'assets/img/sprite.png';
+$cart: (0px, 0px, 0px, 0px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'cart', );
+$checkbox-active-name: 'checkbox-active';
+$checkbox-active-x: 24px;
+$checkbox-active-y: 0px;
+$checkbox-active-offset-x: -24px;
+$checkbox-active-offset-y: 0px;
+$checkbox-active-width: 24px;
+$checkbox-active-height: 24px;
+$checkbox-active-total-width: 88px;
+$checkbox-active-total-height: 72px;
+$checkbox-active-image: 'assets/img/sprite.png';
+$checkbox-active: (24px, 0px, -24px, 0px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'checkbox-active', );
+$close-name: 'close';
+$close-x: 48px;
+$close-y: 48px;
+$close-offset-x: -48px;
+$close-offset-y: -48px;
+$close-width: 16px;
+$close-height: 16px;
+$close-total-width: 88px;
+$close-total-height: 72px;
+$close-image: 'assets/img/sprite.png';
+$close: (48px, 48px, -48px, -48px, 16px, 16px, 88px, 72px, 'assets/img/sprite.png', 'close', );
+$combined-shape-name: 'combined-shape';
+$combined-shape-x: 0px;
+$combined-shape-y: 24px;
+$combined-shape-offset-x: 0px;
+$combined-shape-offset-y: -24px;
+$combined-shape-width: 24px;
+$combined-shape-height: 24px;
+$combined-shape-total-width: 88px;
+$combined-shape-total-height: 72px;
+$combined-shape-image: 'assets/img/sprite.png';
+$combined-shape: (0px, 24px, 0px, -24px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'combined-shape', );
+$expand-name: 'expand';
+$expand-x: 72px;
+$expand-y: 0px;
+$expand-offset-x: -72px;
+$expand-offset-y: 0px;
+$expand-width: 16px;
+$expand-height: 16px;
+$expand-total-width: 88px;
+$expand-total-height: 72px;
+$expand-image: 'assets/img/sprite.png';
+$expand: (72px, 0px, -72px, 0px, 16px, 16px, 88px, 72px, 'assets/img/sprite.png', 'expand', );
+$hot-name: 'hot';
+$hot-x: 24px;
+$hot-y: 24px;
+$hot-offset-x: -24px;
+$hot-offset-y: -24px;
+$hot-width: 24px;
+$hot-height: 24px;
+$hot-total-width: 88px;
+$hot-total-height: 72px;
+$hot-image: 'assets/img/sprite.png';
+$hot: (24px, 24px, -24px, -24px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'hot', );
+$meat-name: 'meat';
+$meat-x: 48px;
+$meat-y: 0px;
+$meat-offset-x: -48px;
+$meat-offset-y: 0px;
+$meat-width: 24px;
+$meat-height: 24px;
+$meat-total-width: 88px;
+$meat-total-height: 72px;
+$meat-image: 'assets/img/sprite.png';
+$meat: (48px, 0px, -48px, 0px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'meat', );
+$remove-name: 'remove';
+$remove-x: 48px;
+$remove-y: 24px;
+$remove-offset-x: -48px;
+$remove-offset-y: -24px;
+$remove-width: 24px;
+$remove-height: 24px;
+$remove-total-width: 88px;
+$remove-total-height: 72px;
+$remove-image: 'assets/img/sprite.png';
+$remove: (48px, 24px, -48px, -24px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'remove', );
+$shape-name: 'shape';
+$shape-x: 0px;
+$shape-y: 48px;
+$shape-offset-x: 0px;
+$shape-offset-y: -48px;
+$shape-width: 24px;
+$shape-height: 24px;
+$shape-total-width: 88px;
+$shape-total-height: 72px;
+$shape-image: 'assets/img/sprite.png';
+$shape: (0px, 48px, 0px, -48px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'shape', );
+$veggie-name: 'veggie';
+$veggie-x: 24px;
+$veggie-y: 48px;
+$veggie-offset-x: -24px;
+$veggie-offset-y: -48px;
+$veggie-width: 24px;
+$veggie-height: 24px;
+$veggie-total-width: 88px;
+$veggie-total-height: 72px;
+$veggie-image: 'assets/img/sprite.png';
+$veggie: (24px, 48px, -24px, -48px, 24px, 24px, 88px, 72px, 'assets/img/sprite.png', 'veggie', );
+$spritesheet-width: 88px;
+$spritesheet-height: 72px;
+$spritesheet-image: 'assets/img/sprite.png';
+$spritesheet-sprites: ($cart, $checkbox-active, $close, $combined-shape, $expand, $hot, $meat, $remove, $shape, $veggie, );
+$spritesheet: (88px, 72px, 'assets/img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

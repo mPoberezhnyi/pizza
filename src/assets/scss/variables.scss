@@ -1,0 +1,42 @@
+// responsive
+$extra-small: 550px;
+$small: 767px;
+$medium: 992px;
+$large: 1224px;
+$extra-large: 1920px;
+
+// colors
+$black: #121212;
+$orange: #ff532d;
+$light-gray: #d0d0d0;
+$gray: #a0a0a0;
+$dark-gray: #656565;
+$white: #ffffff;
+// fonts
+%Montserrat-b {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+%Montserrat-r {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+%Montserrat-l {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+// mixins
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+// responsive
+$extra-large: 1440px;
+$large: 1200px;
+$medium: 992px;
+$small: 767px;

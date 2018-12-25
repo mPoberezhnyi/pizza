@@ -1,0 +1,74 @@
+.container {
+    width: $large;
+    padding: 0 12px;
+    margin: 0 auto;
+    @media screen and (max-width: $large) {
+        width: $medium;
+    }
+    @media screen and (max-width: $medium) {
+        width: $small;
+    }
+    @media screen and (max-width: $small) {
+        width: 100%;
+    }
+}
+
+.content {
+    display: flex;
+    @media screen and (max-width: $extra-small) {
+        @include flex(column, flex-start, center);
+    }
+}
+
+.header {
+    @include flex(row, space-between, center);
+    padding: 32px 0;
+    @media screen and (max-width: $small) {
+        @include flex(column, flex-start, center);
+    }
+    .logo {
+        max-width: 176px;
+    }
+    .nav {
+        @media screen and (max-width: $small) {
+            margin-top: 24px;
+        }
+    }
+}
+.main {
+    padding: 84px 0 137px;
+    @include flex(row, space-between, center);
+    &-content {
+        @include flex(column, flex-start, flex-start);
+    }
+    h1 {
+        margin-bottom: 26px;
+        max-width: 505px;
+    }
+    &-desc {
+        margin-bottom: 32px;
+    }   
+    picture {
+        max-width: 40%;
+        @media screen and (max-width: $medium) {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+        }
+    } 
+}
+.footer {
+    @include flex(column, center, center);
+    padding: 80px 0;
+    color: $black;
+    .logo {
+        max-width: 176px;
+    }
+    .nav {
+        margin-top: 24px;
+        &-item {
+            color: $black;
+        }
+    }
+}

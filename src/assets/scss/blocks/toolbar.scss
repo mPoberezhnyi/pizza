@@ -1,0 +1,71 @@
+.products-toolbar {
+    @include flex(row, space-between, center);
+    padding: 48px 48px 48px 26px;
+    .sort {
+        @include flex(row, flex-start, center);
+        &-title {
+            color: $gray;
+            display: inline-block;
+            margin-right: 7px;
+        }
+        select {
+            height: 24px;
+
+        }
+    }
+    .combined {
+        @include flex(row, flex-end, center);
+        @media screen and (max-width: $medium) {
+            display: none;
+        }
+        &-item {
+            width: 24px;
+            height: 24px;
+            margin-left: 24px;
+
+            input[type=radio] {
+                display: none;
+                &+label {
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    color: $gray;
+                }
+                &:checked {
+                    &+label {
+                        color: $orange;
+                    }
+                }
+            }
+            .row {
+                input[type=radio] {
+                    &+label {
+                        // background-image: url('./img/icons/row-gray.svg');
+                        // background-image: url('src/assets/img/row-gray.svg');
+                    }
+                    &:checked {
+                        &+label {
+                            // background-image: url('../img/row-orange.svg');
+                        }
+                    }
+                }
+            }
+            .grid {
+                input[type=radio] {
+                    &+label {
+                        // background-image: url('./img/icons/grid-gray.svg');
+                        // background-image: url('src/assets/img/grid-gray.svg');
+                    }
+                    &:checked {
+                        &+label {
+                            // background-image: url('../img/grid-orange.svg');
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

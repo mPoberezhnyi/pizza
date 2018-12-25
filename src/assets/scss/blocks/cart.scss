@@ -1,0 +1,108 @@
+.cart {
+    height: 100vh;
+    width: 100%;
+    @include flex(row, center, center);
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    &-overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background-color: $orange;
+        z-index: 1;
+    }
+    &-window {
+        width: 100%;
+        max-width: 1024px;
+        height: auto;
+        max-height: 90vh;
+        padding: 48px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+        background-color: $white;
+        z-index: 2;
+    }
+    &-header {
+        @include flex(row, space-between, center);
+        margin-bottom: 48px;
+    }
+    &-list {
+        border-bottom: 1px solid #eeeeee;
+    }
+    &-product {
+        position: relative;
+        margin-bottom: 48px;
+        @include flex(row, space-between, center);     
+        
+        &__content {
+            @include flex(row, flex-start, center);
+            position: relative;
+            padding-left: 24px;
+            flex: 4;
+        }
+        &__category {
+            @include flex(column, flex-start, flex-start);
+            margin-right: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+        }
+        &__image {
+            padding-right: 24px;
+            img {
+                max-width: 100%;
+                height: 72px;
+                object-fit: contain;
+            }
+        }
+        &__text {
+            padding-right: 30px;
+            h4 {
+                text-align: left;
+            }
+        }
+        &__desc {
+            text-align: left;
+        }
+        &__size {
+            flex: 1;
+        }
+        &__price {
+            flex: 1;
+            color: $orange;
+            @extend %Montserrat-b;
+            font-size: 20px;
+            text-align: right;
+        }
+        &__remove {
+            border: 0;
+            background-color: transparent;
+            margin-left: 10px;
+        }
+    }
+
+    &-footer {
+       @include flex(row, space-between, center); 
+       margin: 24px 0;
+    }
+    &-total {
+        @extend %Montserrat-b;
+        font-size: 24px;
+        color: $black;
+        &__value {
+            color: $orange;
+        }
+    }
+
+
+}
